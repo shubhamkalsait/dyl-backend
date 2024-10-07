@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
 RUN apt update 
-RUN apt install open-jdk-8 -y
+RUN apt install openjdk-8-jdk -y
 RUN apt install maven -y
 
 COPY . /opt/
