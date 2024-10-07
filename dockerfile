@@ -1,4 +1,4 @@
-FROM ubuntu:20
+FROM ubuntu:latest
 
 RUN apt update 
 RUN apt install open-jdk-8 -y
