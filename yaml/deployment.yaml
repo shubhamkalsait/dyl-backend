@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dyl-backend
+spec:
+  replicas: 1
+  template:
+    metadata:
+      label:
+        app: dyl-backend
+    spec:
+      containers:
+        - name: dyl-backend
+          image: shubhamkalsait1/dyl-backend:latest
+          ports:
+            - name: java
+              containerPort: 8080
+  selector:
+    matchLabels:
+      app: dyl-backend
